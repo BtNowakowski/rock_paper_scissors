@@ -7,6 +7,7 @@ Simply click Rock Paper or Scissors, game will pick its choice randomly and resu
 ### Setup
 Use `pip install -r requirements.txt` and you should be good to go
 
+### Screenshots
 ![obraz](https://github.com/BtNowakowski/rock_paper_scissors/assets/107316656/8b92824f-039b-49ad-973f-05392d09a413)
 
 I got my assets from the following website
