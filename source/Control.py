@@ -66,13 +66,15 @@ class Control:
         Returns:
             pygame.Rect: the button
         """
-        rect = pygame.Rect(
-            x,
-            y,
-            self.button_size[0],
-            self.button_size[1],
+        return self.screen.blit(
+            image,
+            pygame.Rect(
+                x,
+                y,
+                self.button_size[0],
+                self.button_size[1],
+            ),
         )
-        return self.screen.blit(image, rect)
 
     def event_loop(self, rock_btn, paper_btn, scissors_btn) -> None:
         for event in pygame.event.get():
