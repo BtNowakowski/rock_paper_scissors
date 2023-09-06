@@ -2,6 +2,8 @@ from random import choice as random_choice
 
 
 class Game:
+    """class used to represent the game of rock paper scissors \n"""
+
     valid_options = ["r", "p", "s"]  # r = rock, p = paper, s = scissors
     wins_to = {
         "r": {"s"},  # rock wins against scissors
@@ -22,8 +24,9 @@ class Game:
             bool: determines if the player won or not - (True = win, False = lose, None = tie)
         """
         computer_choice = self.get_computer_choice()
-        if user_choice not in self.wins_to[computer_choice]:
-            return True
-        elif user_choice == computer_choice:
+        if user_choice == computer_choice:
+            print("tie")
             return None
+        elif user_choice not in self.wins_to[computer_choice]:
+            return True
         return False
