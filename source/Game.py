@@ -25,7 +25,6 @@ class Game:
         """
         computer_choice = self.get_computer_choice()
         if user_choice == computer_choice:
-            print("tie")
             return None
         elif user_choice not in self.wins_to[computer_choice]:
             return True
