@@ -1,4 +1,5 @@
-from gui import main as run_game
+from Control import Control
 
 if __name__ == "__main__":
-    run_game()
+    control = Control()
+    control.run_game()
