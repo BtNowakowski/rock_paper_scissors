@@ -98,7 +98,6 @@ class Control:
         screen_center_y = self.screen.get_height() / 2 - self.button_size[0] / 2
 
         while True:
-            # Process player inputs.
             self.screen.fill("purple")
 
             # Display the buttons.
@@ -124,6 +123,7 @@ class Control:
             )
             self.screen.blit(score_text, (screen_center_x, 35))
 
+            # Process player inputs.
             self.event_loop(rock_btn, paper_btn, scissors_btn)
 
             # Refresh on-screen display
