@@ -2,7 +2,7 @@
 Classic game written for fun and also to practice pygame
 
 ## How to play
-Simply click Rock Paper or Scissors.
+Simply click on Rock, Paper or Scissors.
 
 ### Setup
 Use `pip install -r requirements.txt` and you should be good to go
