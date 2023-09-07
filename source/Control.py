@@ -91,8 +91,7 @@ class Control:
                 if scissors_btn.collidepoint(pos):
                     self.did_win("s")
 
-    def run_game(self) -> None:
-        """Function used to run the game. Contains the main game loop. \n"""
+    def main_loop(self) -> None:
         # Define the screen center for buttons.
         screen_center_x = self.screen.get_width() / 2 - self.button_size[0] / 2
         screen_center_y = self.screen.get_height() / 2 - self.button_size[0] / 2
